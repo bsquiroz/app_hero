@@ -1,0 +1,23 @@
+PASOS:
+
+-   Instalar gh-pages:
+    npm install --save-dev gh-pages (o $ npm i -D gh-pages)
+
+-   Crear el repo y darle un nombre | deploy-app-video (en mi caso)
+-   Agregarlo como remote git:
+    $ git remote add origin https://github.com/user/repo.git
+
+-   En el package.json pega la linea:
+    "homepage":"https://yourusername.github.io/reposi..."
+    mi caso https://willydavid1.github.io/deploy-...
+
+Que es el package.json ? es un archivo de configuración con información sobre mi proyecto, aparecen las dependencias así sabe node que mi proyecto depende de esos módulos, cuando ejecuten el npm install LOS INSTALA. y también tiene los scripts npm start, y cuando desde la consola ejecute el comando npm start hace algo, para scripts personalizados usamos npm run NOMBRE_COMANDO
+
+Y los scripts de ejecución:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+Correr los scripts por orden:
+
+-   npm run build
+-   npm run deploy

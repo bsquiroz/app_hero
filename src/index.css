@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.container_notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 58px);
+}
+
+.content_notFound {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.itm_404 {
+    font-weight: bold;
+    font-size: 4rem;
+}
